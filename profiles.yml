@@ -1,0 +1,13 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      account: cz66046.ap-southeast-2
+      database: TEST
+      password: "{{ env_var('DBT_PASSWORD') }}"
+      role: SYSADMIN
+      schema: public
+      threads: 4
+      type: snowflake
+      user: DBT
+      warehouse: COMPUTE_WH
