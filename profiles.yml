@@ -5,8 +5,8 @@ default:
       account: cz66046.ap-southeast-2
       database: TEST
       password: "{{ env_var('DBT_PASSWORD') }}"
-      role: SYSADMIN
-      schema: public
+      role: DBT
+      schema: PUBLIC
       threads: 4
       type: snowflake
       user: DBT
